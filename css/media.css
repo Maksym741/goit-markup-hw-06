@@ -30,6 +30,7 @@
         url(../images/people-tab.jpg) ;
         padding: 112px 0;
         min-width: 768px;
+        margin: 0 auto; 
     }
     @media screen and(min-device-pixel-ratio: 2),
     (min-resolution: 2dppx), (min-resolution: 192dpi) {
