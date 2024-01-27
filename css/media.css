@@ -21,7 +21,6 @@
     .menu-open-btn{
         display: none;
     }
-
 /*?-----------------------------------------*/
 /*?-------------------Hero-------------------*/
     .first-page {
@@ -105,11 +104,16 @@
     .footer-label{
         margin-right: 24px;
     }
+/*?------------------Mod-----------------*/
+    .modal{
+        width: 408px;
+        min-height: 584px;
+        padding: 72px 24px 24px 24px;
+    }
+    .form{
+        width: 360px;
+    }
 }
-
-
-
-
 
 
 @media screen and (min-width:1158px) {
@@ -129,28 +133,27 @@
         line-height: 1.5;
         letter-spacing: 0.02em;
     }
-
 /*?-----------------------------------------*/
 /*?-------------------Hero-------------------*/
     .first-page {
-        background-image: linear-gradient(
+            background-image: linear-gradient(
             rgba(46, 47, 66, 0.70),
             rgba(46, 47, 66, 0.70)),
-        url(../images/people-dec.jpg) ;
+        url(../images/people-dec.jpg);
         padding: 188px 0;
         max-width: 1440px;
     }
     @media screen and(min-device-pixel-ratio: 2),
     (min-resolution: 2dppx), (min-resolution: 192dpi) {
-    .first-page{
-    background-image: linear-gradient(
+    .first-page {
+        background-image: linear-gradient(
         rgba(46, 47, 66, 0.70),
         rgba(46, 47, 66, 0.70)),  
     url(../images/people-dec.jpg);
     }
 }
     .first-page-title {
-    margin-bottom: 48px;
+        margin-bottom: 48px;
     }   
 /*?-----------------------------------------*/
 /*?-------------------Feature-------------------*/

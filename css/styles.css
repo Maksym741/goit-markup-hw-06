@@ -75,12 +75,14 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  z-index: 1;
 }
 
 .menu-close-btn {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   margin-left: auto;
   margin-bottom: 24px;
   width: 24px;
@@ -101,9 +103,7 @@ img {
   flex-direction: column;
   gap: 40px;
 }
-.njjyuhh{
-  display: block;
-}
+
 .link-mob {
   display: block;
   color: #2E2F42;
@@ -120,6 +120,7 @@ img {
 .link-mob:active {
   color: #404bbf;
 }
+
 .address-mob {
   margin-bottom: 48px;
 }
@@ -142,8 +143,7 @@ img {
 .address-list-nav-mob:active {
   color: #4D5AE5;
 }
-.mob-soc {
-}
+
 .svg-mob {
   display: flex;
   gap: 40px;
@@ -344,7 +344,6 @@ img {
 .button-title:active{
   background-color: #404bbf;
 }
-
 /*?-----------------------------------------*/
 /*?-------------------Feature-------------------*/
 .feature-section {
@@ -401,9 +400,10 @@ img {
 .title-two {
   font-size: 36px;
   line-height: 1.11;
-  text-align: center;
+  font-weight: 700;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  text-align: center;
   color: #2e2f42;
   margin-bottom: 72px;
 }
@@ -438,6 +438,7 @@ img {
 
 .header-three-text {
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
@@ -477,7 +478,6 @@ img {
 .tem-list-icon{
   fill: #F4F4FD;
 }
-
 /*?-----------------------------------------*/
 /*?-------------------Portfolio-------------------*/
 .portfolio-section{
@@ -503,7 +503,6 @@ img {
 .img-overlay{
   overflow: hidden;
   position: relative;
-
 }
 
 .overlay{
@@ -520,7 +519,6 @@ img {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px 32px;
-  z-index: 1;
 }
 
 .item-portfolio:hover .overlay{
@@ -549,7 +547,6 @@ padding: 32px 16px;
   letter-spacing: 0.02em;
   color: #434455;
 }
-
 /*?-----------------------------------------*/
 /*?-------------------footer-------------------*/
 .footer {
@@ -586,8 +583,12 @@ padding: 32px 16px;
 .page-footer-text {
   max-width: 100%;
   width: 264px;
-  line-height: 1.5;
   color: #f4f4fd;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
@@ -660,9 +661,9 @@ padding: 32px 16px;
 }
 
 .footer-form{
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer-label{
@@ -718,7 +719,7 @@ justify-content: center;
   margin-left: 16px;
 }
 
-/*?-----------------------------------------*/
+/*?------------------Mod-----------------------*/
 
 .backdrop{
   width: 100%;
@@ -739,8 +740,8 @@ justify-content: center;
 }
 
 .modal{
-  width: 408px;
-  min-height: 584px;
+  width: 288px;
+  min-height: 623px;
   border-radius: 4px;
   background-color: #fcfcfc;
   box-shadow:  0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);;
@@ -749,7 +750,7 @@ justify-content: center;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 72px 24px 24px 24px;
+  padding: 72px 16px 24px 16px;
 }
 
 .modal-btn{
@@ -801,12 +802,11 @@ justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 360px;
+  width: 255px;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  margin-bottom: 4px;
 }
 
 .form-list{
@@ -885,7 +885,7 @@ justify-content: center;
 
 .modal-textarea:hover,
 .modal-textarea:focus,
-.modal-textarea:active{
+.modal-textarea:active {
   border-color: #4D5AE5
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -895,6 +895,8 @@ justify-content: center;
 }
 
 .chec-text{
+  display: flex;
+  align-items: center;
   color: #8E8F99;
 }
 
@@ -902,9 +904,10 @@ justify-content: center;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   width: 16px;
   height: 16px;
-  margin-right: 16px;
+  margin-right: 8px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.40);
   fill: transparent;
