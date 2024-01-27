@@ -1,9 +1,224 @@
-@media screen() {
-    
+@media screen and (min-width:768px) {
+    .container {
+        max-width:768px;
+    }
+/*?-------------------header-------------------*/
+    .nav-link {
+        display: flex;
+    }
+    .nav-addrres{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .address-list-nav{
+        display: block;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.16;
+        letter-spacing: 0.04em;
+    }
+    .menu-open-btn{
+        display: none;
+    }
+
+/*?-----------------------------------------*/
+/*?-------------------Hero-------------------*/
+    .first-page {
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.70),
+            rgba(46, 47, 66, 0.70)),
+        url(../images/people-tab.jpg) ;
+        padding: 112px 0;
+        min-width: 768px;
+    }
+    @media screen and(min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx), (min-resolution: 192dpi) {
+    .first-page{
+        background-image: linear-gradient(
+        rgba(46, 47, 66, 0.70),
+        rgba(46, 47, 66, 0.70)),  
+        url(../images/people-tab-2x.jpg);
+        }
+    }
+    .first-page-title{
+    font-size: 56px;
+    line-height: 1.07;
+    text-transform: none;
+    max-width: 496px;
+    margin-bottom: 36px;
+    }
+/*?-----------------------------------------*/
+/*?-------------------Feature-------------------*/
+    .feature-container{
+        gap: 72px 24px;
+    }
+    .item-feature{
+        width: calc((100% - 24px) / 2);
+    }
+    .page-feature-title{
+        text-align: left;
+    }
+/*?-----------------------------------------*/
+/*?-------------------Our Team-------------------*/
+.page-team-section {
+    padding: 96px 0;
+    }
+    .team-container{
+        gap: 64px 24px;
+    }
+    .page-team-list{
+        width: calc((100% - 24px) / 2);
+    }
+/*?-----------------------------------------*/
+/*?-------------------Portfolio-------------------*/
+    .container-portfolio {
+        gap: 72px 24px;
+    }
+    .item-portfolio {
+        width: calc((100% - 24px) / 2);
+    }
+/*?-----------------------------------------*/
+/*?-------------------footer-------------------*/
+    .container-footer{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+    .one-div-footer{
+        margin-left: 92px;
+        margin-right: 24px;
+    }
+    .logo-footer{
+        justify-content: flex-start;
+    }
+    .social-text{
+        justify-content: flex-start;
+    }
+    .subscribe{
+        margin-left: 92px;
+    }
+    .text-sub{
+        justify-content: flex-start;
+    }
+    .footer-label{
+        margin-right: 24px;
+    }
 }
-@media screen() {
-    
+
+
+
+
+
+
+@media screen and (min-width:1158px) {
+    .container {
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+/*?-------------------header-------------------*/
+    .nav-addrres{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    }
+    .address-list-nav {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+
+/*?-----------------------------------------*/
+/*?-------------------Hero-------------------*/
+    .first-page {
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.70),
+            rgba(46, 47, 66, 0.70)),
+        url(../images/people-dec.jpg) ;
+        padding: 188px 0;
+        min-width: 1158px;
+    }
+    @media screen and(min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx), (min-resolution: 192dpi) {
+    .first-page{
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.70),
+        rgba(46, 47, 66, 0.70)),  
+    url(../images/people-dec.jpg);
+    }
 }
+    .first-page-title {
+    margin-bottom: 48px;
+    }   
+/*?-----------------------------------------*/
+/*?-------------------Feature-------------------*/
+    .feature-section {
+        padding: 120px 0;
+    }
+    .feature-container-svg{
+        display: flex;
+        gap: 24px;
+    }
+    .item-feature{
+        width: calc((100% - 72px) / 4);
+    }
+    .page-feature-title{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    .page-feature-text{
+        font-weight: 400;
+    }
+/*?-----------------------------------------*/
+/*?-------------------Our Team-------------------*/
+    .page-team-section {
+    padding: 120px 0;
+    }
+    .team-container{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+/*?-----------------------------------------*/
+/*?-------------------Portfolio-------------------*/
+    .portfolio-section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .container-portfolio {
+        gap: 48px 24px;
+    }
+    .item-portfolio {
+        width: calc((100% - 48px) / 3);
+    }
+/*?-----------------------------------------*/
+/*?-------------------footer-------------------*/
+    .footer{
+        padding: 100px 0;
+    }
+    .container-footer{
+        flex-wrap: nowrap;
+    }
+    .one-div-footer{
+        margin-left: 0;
+        margin-right: 120px;
+        margin-bottom: 0;
+    }
+    .social{
+        margin-right: 80px;
+        margin-bottom: 0;
+    }
+    .subscribe{
+        margin-left: 0;
+    }
+}
+
+
+
+
 
 
 
