@@ -138,7 +138,7 @@
             rgba(46, 47, 66, 0.70)),
         url(../images/people-dec.jpg) ;
         padding: 188px 0;
-        min-width: 1158px;
+        max-width: 1440px;
     }
     @media screen and(min-device-pixel-ratio: 2),
     (min-resolution: 2dppx), (min-resolution: 192dpi) {
