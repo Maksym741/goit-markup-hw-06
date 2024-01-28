@@ -70,7 +70,6 @@ img {
   padding: 24px 24px 40px 16px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   overflow: auto;
   opacity: 0;
   visibility: hidden;
@@ -96,7 +95,7 @@ img {
 }
 
 .nav-mob {
-  margin-bottom: 168px;
+  margin-bottom: auto;
 }
 .nav-link-mob {
   display:flex;
@@ -119,6 +118,10 @@ img {
 .link-mob:focus,
 .link-mob:active {
   color: #404bbf;
+}
+
+.mob-soc-address{
+  margin-top: 168px;
 }
 
 .address-mob {
@@ -196,7 +199,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  margin-right: 76px;
 }
 
 .logo-studio {
@@ -567,6 +569,7 @@ padding: 32px 16px;
 .logo-footer{
   display: flex;
   justify-content: center;
+  font-family: Raleway;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;

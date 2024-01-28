@@ -2,7 +2,14 @@
     .container {
         max-width:768px;
     }
+/*?-----------------mob-menu------------------*/
+    .mob-menu{
+        display: none;
+    }
 /*?-------------------header-------------------*/
+    .logo {
+        margin-right: 76px;
+    }
     .nav-link {
         display: flex;
     }
@@ -21,6 +28,7 @@
     .menu-open-btn{
         display: none;
     }
+
 /*?-----------------------------------------*/
 /*?-------------------Hero-------------------*/
     .first-page {
@@ -83,11 +91,11 @@
     .container-footer{
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: flex-start;
         align-items: baseline;
+        padding-left: 108px;
+        padding-right: 164px;
     }
     .one-div-footer{
-        margin-left: 92px;
         margin-right: 24px;
     }
     .logo-footer{
@@ -96,14 +104,12 @@
     .social-text{
         justify-content: flex-start;
     }
-    .subscribe{
-        margin-left: 92px;
-    }
     .text-sub{
         justify-content: flex-start;
     }
     .footer-label{
         margin-right: 24px;
+        margin-bottom: 0;
     }
 /*?------------------Mod-----------------*/
     .modal{
